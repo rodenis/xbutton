@@ -24,10 +24,11 @@
 
     XButton.prototype = {
         destroy : function() {
-            this.element.btnData = null;
-            this.element.removeEventListener(START_EV, touchHandler, false );
-            this.element.removeEventListener(MOVE_EV, touchHandler, false );
-            this.element.removeEventListener(END_EV, touchHandler, false );
+            var btn = this.element;
+            btn.btnData = null;
+            btn.removeEventListener(START_EV, touchHandler, false );
+            btn.removeEventListener(MOVE_EV, touchHandler, false );
+            btn.removeEventListener(END_EV, touchHandler, false );
         }
     };
 
