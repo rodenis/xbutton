@@ -12,7 +12,7 @@
         CANCEL_EV = hasTouch ? 'touchcancel' : 'mouseup';
 
     var XButton = function(el, relations, handler, btnDownClass){
-        var btn = this.element = typeof el == 'object' ? el : document.getElementById(el);;
+        var btn = this.element = typeof el == 'object' ? el : document.getElementById(el);
         btn.btnData = {};
         btn.btnData.relations = relations;
         btn.btnData.style = btnDownClass;
@@ -20,6 +20,9 @@
         btn.addEventListener(START_EV, touchHandler, false);
         btn.addEventListener(MOVE_EV, touchHandler, false);
         btn.addEventListener(END_EV, touchHandler, false);
+        if (hasTouch) {
+            btn.addEventListener(CANCEL_EV, touchHandler, false);
+        }
     };
 
     XButton.prototype = {
@@ -29,6 +32,9 @@
             btn.removeEventListener(START_EV, touchHandler, false );
             btn.removeEventListener(MOVE_EV, touchHandler, false );
             btn.removeEventListener(END_EV, touchHandler, false );
+            if (hasTouch) {
+                btn.removeEventListener(CANCEL_EV, touchHandler, false);
+            }
         }
     };
 
