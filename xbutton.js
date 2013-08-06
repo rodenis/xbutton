@@ -51,7 +51,7 @@
             if (!data.cancel) {
                 removeClass(data.style, this);
                 //execute handler
-                data.handler(data.relations);
+                data.handler.call(this, data.relations);
             }
         } else if (e.type == CANCEL_EV) {
             data.cancel = true;
