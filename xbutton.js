@@ -60,6 +60,7 @@
     }
 
     function addClass( classname, element ) {
+        if (classname == null || classname == '') return;
         var cn = element.className;
         //test for existance
         if( cn.indexOf( classname ) != -1 ) {
@@ -73,6 +74,7 @@
     }
 
     function removeClass( classname, element ) {
+        if (classname == null || classname == '') return;
         var cn = element.className;
         var rxp = new RegExp( "\\s?\\b"+classname+"\\b", "g" );
         cn = cn.replace( rxp, '' );
