@@ -90,7 +90,7 @@
         element.className = cn;
     }
 
-    window.XButton = function(element, relations, handler, style) {
-        return new XButton(element, relations, handler, style);
+    window.XButton = function(element, relations, handler, style, delta) {
+        return new XButton(element, relations, handler, style, delta);
     };
 }());
