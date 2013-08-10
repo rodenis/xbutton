@@ -28,6 +28,10 @@ in js:
 Changelog
 ---------
 
+### 0.1.1 ###
+
+ + touch precision is now passed as parameter to constructor
+
 ### 0.1 ###
 
  * initial version
