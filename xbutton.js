@@ -1,5 +1,5 @@
 /*!
- * xButton v0.1.1 ~ Copyright (c) 2013 Denis Rodin, http://galaxyard.com
+ * xButton v0.2 ~ Copyright (c) 2013 Denis Rodin, http://galaxyard.com
  * Released under MIT license
  */
 

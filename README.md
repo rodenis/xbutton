@@ -28,7 +28,7 @@ in js:
 Changelog
 ---------
 
-### 0.1.1 ###
+### 0.2 ###
 
  + touch precision is now passed as parameter to constructor
 
